@@ -74,6 +74,10 @@ p.lead {
         transform: translateY(-5px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
+.project-card {
+    overflow: visible;
+    position: relative;
+}
 
 .project-card .back a {
     color: white;
@@ -221,8 +225,17 @@ p.lead {
 }
 
 .card-body {
-    padding: 2rem;
+    padding-bottom: 2rem;
 }
+
+    .card-body ul {
+        margin-top: 1rem;
+        padding-left: 1.5rem;
+    }
+
+        .card-body ul li {
+            margin-bottom: 0.5rem;
+        }
 
     .card-body .btn {
         margin-top: 1rem;
@@ -258,3 +271,20 @@ p.lead {
         font-size: 1rem;
     }
 
+
+.collapse {
+    display: none;
+    overflow: hidden;
+    transition: height 0.3s ease, opacity 0.3s ease;
+}
+
+    .collapse.show {
+        display: block;
+        overflow: visible;
+        height: auto;
+    }
+
+.show-on-expand {
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
