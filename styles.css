@@ -311,4 +311,67 @@ p.lead {
 .show-on-expand {
     padding: 1rem 0;
     margin-top: 1rem;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    list-style-type: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.nav-item {
+    margin: 0;
+    text-decoration: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+    .nav-link:hover {
+        color: #ff6600;
+    }
+
+.navbar-nav {
+    list-style-type: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+    .navbar-nav .nav-item {
+        list-style-type: none !important;
+    }
+
+.project-card {
+    margin-bottom: 1rem;
+}
+
+    .project-card .card-body {
+        padding: 1.5rem;
+    }
+
+.text-center p {
+    padding: 0 15px;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .project-card .card-body {
+        padding: 1rem;
+    }
+
+    .row .col-12 {
+        margin-bottom: 20px;
+    }
 }
