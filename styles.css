@@ -74,23 +74,24 @@ p.lead {
         transform: translateY(-5px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
+
 .project-card {
     overflow: visible;
     position: relative;
 }
 
-.project-card .back a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    margin-top: 10px;
-    font-size: 1rem;
-}
-
-    .project-card .back a:hover {
-        color: #FFD700;
-        text-decoration: underline;
+    .project-card .back a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        margin-top: 10px;
+        font-size: 1rem;
     }
+
+        .project-card .back a:hover {
+            color: #FFD700;
+            text-decoration: underline;
+        }
 
 @media (max-width: 768px) {
     .hero-image {
@@ -104,6 +105,10 @@ p.lead {
 
     p.lead {
         font-size: 1rem;
+    }
+
+    .project-card .card-body ul {
+        font-size: 0.9rem;
     }
 }
 
@@ -133,6 +138,10 @@ p.lead {
         box-sizing: border-box;
         transform-style: preserve-3d;
         will-change: transform;
+    }
+
+    .project-card .btn-gradient {
+        margin-bottom: 0;
     }
 
     .project-card .front {
@@ -196,6 +205,7 @@ p.lead {
 
 .text-muted {
     color: #6c757d;
+    margin: 0px;
 }
 
 .project-card .back h4,
@@ -226,6 +236,8 @@ p.lead {
 
 .card-body {
     padding-bottom: 2rem;
+    position: relative;
+    min-height: 200px;
 }
 
     .card-body ul {
@@ -262,8 +274,8 @@ p.lead {
 }
 
 .collapse ul {
-    padding-left: 20px;
-    color: #555;
+    margin: 0;
+    padding: 0;
 }
 
     .collapse ul li {
@@ -271,18 +283,30 @@ p.lead {
         font-size: 1rem;
     }
 
-
 .collapse {
-    display: none;
+    margin-top: 10px;
     overflow: hidden;
-    transition: height 0.3s ease, opacity 0.3s ease;
+    transition: height 0.3s ease-in-out;
 }
 
     .collapse.show {
-        display: block;
-        overflow: visible;
         height: auto;
     }
+
+    .collapse ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+
+.project-card {
+    min-height: 300px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.container {
+    max-width: 90%;
+}
 
 .show-on-expand {
     padding: 1rem 0;
